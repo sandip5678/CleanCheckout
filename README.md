@@ -4,7 +4,11 @@ A drop-in replacement for the Magento 2 checkout.
 
 ## Features
 
-- Overall checkout improvements, such as;
+## Modules
+
+The project is divided into several modules:
+
+- Overall checkout improvements, such as; ([Core Module](https://github.com/danslo/CleanCheckoutCore))
     - Show input labels next to the fields
     - Allow disabling checkout fields like telephone, company, etc.
     - Remove the header and footer from the checkout entirely.
@@ -15,13 +19,16 @@ A drop-in replacement for the Magento 2 checkout.
     - Allow disabling of useless shipping method step with just 1 available option.
     - Allow changing of checkout colors using useful colorpickers.
     - Uses [Font Awesome](http://fontawesome.io/) to provider better icons.
-- Geo IP: Customer country is detected and immediately injected in the right places so it will be used for Shipping and Billing country fields and for calculating tax estimates.
-- Social Login: Uses [Hybridauth](https://hybridauth.github.io/) to allow customers to login with their favorite social media.
-- Newsletter: Lets customers immediately subscribe to the newsletter from the final step in the checkout.
-- Address Autocompletion: Using the [Google Maps Autocomplete API](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform), we can significantly reduce the number of fields required by the customer.
+- [Geo IP](https://github.com/danslo/CleanCheckoutGeo)
+: Customer country is detected and immediately injected in the right places so it will be used for Shipping and Billing country fields and for calculating tax estimates.
+- [Social Login](https://github.com/danslo/CleanCheckoutSocial): Uses [Hybridauth](https://hybridauth.github.io/) to allow customers to login with their favorite social media.
+- [Newsletter](https://github.com/danslo/CleanCheckoutNewsletter): Lets customers immediately subscribe to the newsletter from the final step in the checkout.
+- [Address Autocompletion]((https://github.com/danslo/CleanCheckoutAutocomplete)): Using the [Google Maps Autocomplete API](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform), we can significantly reduce the number of fields required by the customer.
 - Field Order: Allow administrators to choose their own order of checkout fields.
+- [A simple but effective default theme](https://github.com/danslo/CleanCheckoutTheme)
 
 All of these features are highly customizable from the backend.
+
 
 ## Installation
 
@@ -29,7 +36,7 @@ All of these features are highly customizable from the backend.
 $ composer require rubic/magento2-module-clean-checkout
 ```
 
-Note: getting an error while installing? Look [here](https://github.com/danslo/CleanCheckout/issues/5#issuecomment-349649361) for a temporary workaround.
+Note: getting an error while installing? Look [here](https://github.com/danslo/CleanCheckout/issues/5#issuecomment-427355564) for a temporary workaround.
 
 ## Screenshot
 
